@@ -72,6 +72,9 @@
     <Compile Include="shortestPathGame.Designer.cs">
       <DependentUpon>shortestPathGame.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="knapsackGame.resx">
+      <DependentUpon>knapsackGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main Menu.resx">
       <DependentUpon>Main Menu.cs</DependentUpon>
     </EmbeddedResource>
