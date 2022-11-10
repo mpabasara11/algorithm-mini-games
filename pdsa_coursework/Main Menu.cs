@@ -20,22 +20,22 @@ namespace pdsa_coursework
         private void button1_Click(object sender, EventArgs e)
         {
            // this.Hide();
-            Game1 game1 = new Game1();
-            game1.Show();
+            knapsackGame knapsackGame = new knapsackGame();
+            knapsackGame.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             // this.Hide();
-            Game2 game2 = new Game2();
-            game2.Show();
+            shortestPathGame shortestPathGame = new shortestPathGame();
+            shortestPathGame.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             // this.Hide();
-            Game3 game3 = new Game3();
-            game3.Show();
+            minimumConnectorsGame minimumConnectorsGame = new minimumConnectorsGame();
+            minimumConnectorsGame.Show();
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pdsa_coursework
 {
-    public partial class Game1 : Form
+    public partial class shortestPathGame : Form
     {
-        public Game1()
+        public shortestPathGame()
         {
             InitializeComponent();
         }

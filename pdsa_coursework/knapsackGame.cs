@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pdsa_coursework
 {
-    public partial class Game2 : Form
+    public partial class knapsackGame : Form
     {
-        public Game2()
+        public knapsackGame()
         {
             InitializeComponent();
         }

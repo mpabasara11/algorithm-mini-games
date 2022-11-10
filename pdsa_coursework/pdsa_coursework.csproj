@@ -46,23 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Game1.cs">
+    <Compile Include="knapsackGame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Game1.Designer.cs">
-      <DependentUpon>Game1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Game2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Game2.Designer.cs">
-      <DependentUpon>Game2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Game3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Game3.Designer.cs">
-      <DependentUpon>Game3.cs</DependentUpon>
+    <Compile Include="knapsackGame.Designer.cs">
+      <DependentUpon>knapsackGame.cs</DependentUpon>
     </Compile>
     <Compile Include="Main Menu.cs">
       <SubType>Form</SubType>
@@ -70,11 +58,20 @@
     <Compile Include="Main Menu.Designer.cs">
       <DependentUpon>Main Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="minimumConnectorsGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="minimumConnectorsGame.Designer.cs">
+      <DependentUpon>minimumConnectorsGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Game3.resx">
-      <DependentUpon>Game3.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="shortestPathGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shortestPathGame.Designer.cs">
+      <DependentUpon>shortestPathGame.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Main Menu.resx">
       <DependentUpon>Main Menu.cs</DependentUpon>
     </EmbeddedResource>

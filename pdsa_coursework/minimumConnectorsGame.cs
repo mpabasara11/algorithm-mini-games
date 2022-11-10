@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace pdsa_coursework
 {
-    public partial class Game3 : Form
+    public partial class minimumConnectorsGame : Form
     {
-        public Game3()
+        public minimumConnectorsGame()
         {
             InitializeComponent();
-        }
-
-       
-
-        private void Game3_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
