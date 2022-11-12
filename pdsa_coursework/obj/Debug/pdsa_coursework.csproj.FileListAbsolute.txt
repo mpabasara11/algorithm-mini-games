@@ -9,3 +9,4 @@ D:\Repositories\Visual studio\Pdsa_Coursework\pdsa_coursework\obj\Debug\pdsa_cou
 D:\Repositories\Visual studio\Pdsa_Coursework\pdsa_coursework\obj\Debug\pdsa_coursework.csproj.CoreCompileInputs.cache
 D:\Repositories\Visual studio\Pdsa_Coursework\pdsa_coursework\obj\Debug\pdsa_coursework.exe
 D:\Repositories\Visual studio\Pdsa_Coursework\pdsa_coursework\obj\Debug\pdsa_coursework.pdb
+D:\Repositories\Visual studio\Pdsa_Coursework\pdsa_coursework\obj\Debug\pdsa_coursework.knapsackGame.resources
