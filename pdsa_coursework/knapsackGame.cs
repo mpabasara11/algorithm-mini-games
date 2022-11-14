@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,6 +15,8 @@ namespace pdsa_coursework
 {
     public partial class knapsackGame : Form
     {
+        //subset kept global since its need to be accessed  from all methods
+        int[] subsets = new int[10];
         public knapsackGame()
         {
             InitializeComponent();
@@ -104,15 +108,127 @@ namespace pdsa_coursework
                 }
             }
 
-            label1.Text= matrix[10,capacity].ToString();
+            
+               int maxprofit= matrix[10,capacity];
 
 
-            //////////////////////////////
+            int a = 10;
+            int b = capacity;
+
+        // int[] subsets = new int[10];
+
+            int x = 0;
+            while (a > 0 && b > 0)
+            {
+              
+                if (matrix[a,b] != matrix[a - 1,b])
+                {
+                  
+                    Console.WriteLine(a);
+                    subsets[x] = a; x = x + 1;
+                   
+                    b = b - weight[a - 1];
+                 
+                }
+                a--;
+                
+
+            }
+
+         
+
 
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int[] answers=new int[10];
+            int x = 0;
 
-      
+            if (chkbx1.Checked) 
+            {
+                answers[x] = 1;
+                x++;
+            }
+            if (chkbx2.Checked)
+            {
+                answers[x] = 2;
+                x++;
+            }
+            if (chkbx3.Checked)
+            {
+                answers[x] = 3;
+                x++;
+            }
+            if (chkbx4.Checked)
+            {
+                answers[x] = 4;
+                x++;
+            }
+            if (chkbx5.Checked)
+            {
+                answers[x] = 5;
+                x++;
+            }
+            if (chkbx6.Checked)
+            {
+                answers[x] = 6;
+                x++;
+            }
+            if (chkbx7.Checked)
+            {
+                answers[x] = 7;
+                x++;
+            }
+            if (chkbx8.Checked)
+            {
+                answers[x] = 8;
+                x++;
+            }
+            if (chkbx9.Checked)
+            {
+                answers[x] = 9;
+                x++;
+            }
+            if (chkbx10.Checked)
+            {
+                answers[x] = 10;
+                x++;
+            }
+            ///////////////////////////////////////debug from here
+
+            //Console.WriteLine(x.ToString());
+
+
+         
+          
+
+
+            int matchedanswers = 0;
+            for (int y = 0; y < answers.Length; y++) 
+            {
+                for(int z=0;z<subsets.Length;z++) 
+                {
+                    if (answers[y] == subsets[z] && (answers[y] != 0 && subsets[z] != 0)) 
+                    {
+                          matchedanswers++;
+                 
+
+                    }
+
+                }
+            
+
+            }
+
+            if (matchedanswers == x)
+            {
+                MessageBox.Show("wade goda bossa");
+            }
+
+
+
+        }
     }
 }
