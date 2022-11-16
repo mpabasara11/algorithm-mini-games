@@ -41,13 +41,14 @@
             this.chkbx7 = new System.Windows.Forms.CheckBox();
             this.chkbx6 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // splitter1
             // 
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 595);
+            this.splitter1.Size = new System.Drawing.Size(3, 516);
             this.splitter1.TabIndex = 1;
             this.splitter1.TabStop = false;
             // 
@@ -64,7 +65,7 @@
             // chkbx1
             // 
             this.chkbx1.AutoSize = true;
-            this.chkbx1.Location = new System.Drawing.Point(904, 108);
+            this.chkbx1.Location = new System.Drawing.Point(884, 99);
             this.chkbx1.Name = "chkbx1";
             this.chkbx1.Size = new System.Drawing.Size(66, 20);
             this.chkbx1.TabIndex = 3;
@@ -74,7 +75,7 @@
             // chkbx2
             // 
             this.chkbx2.AutoSize = true;
-            this.chkbx2.Location = new System.Drawing.Point(904, 134);
+            this.chkbx2.Location = new System.Drawing.Point(884, 125);
             this.chkbx2.Name = "chkbx2";
             this.chkbx2.Size = new System.Drawing.Size(66, 20);
             this.chkbx2.TabIndex = 4;
@@ -84,7 +85,7 @@
             // chkbx3
             // 
             this.chkbx3.AutoSize = true;
-            this.chkbx3.Location = new System.Drawing.Point(904, 160);
+            this.chkbx3.Location = new System.Drawing.Point(884, 151);
             this.chkbx3.Name = "chkbx3";
             this.chkbx3.Size = new System.Drawing.Size(66, 20);
             this.chkbx3.TabIndex = 5;
@@ -94,7 +95,7 @@
             // chkbx4
             // 
             this.chkbx4.AutoSize = true;
-            this.chkbx4.Location = new System.Drawing.Point(904, 186);
+            this.chkbx4.Location = new System.Drawing.Point(884, 177);
             this.chkbx4.Name = "chkbx4";
             this.chkbx4.Size = new System.Drawing.Size(67, 20);
             this.chkbx4.TabIndex = 6;
@@ -104,7 +105,7 @@
             // chkbx5
             // 
             this.chkbx5.AutoSize = true;
-            this.chkbx5.Location = new System.Drawing.Point(904, 212);
+            this.chkbx5.Location = new System.Drawing.Point(884, 203);
             this.chkbx5.Name = "chkbx5";
             this.chkbx5.Size = new System.Drawing.Size(66, 20);
             this.chkbx5.TabIndex = 7;
@@ -114,7 +115,7 @@
             // chkbx10
             // 
             this.chkbx10.AutoSize = true;
-            this.chkbx10.Location = new System.Drawing.Point(1060, 212);
+            this.chkbx10.Location = new System.Drawing.Point(1040, 203);
             this.chkbx10.Name = "chkbx10";
             this.chkbx10.Size = new System.Drawing.Size(64, 20);
             this.chkbx10.TabIndex = 12;
@@ -124,7 +125,7 @@
             // chkbx9
             // 
             this.chkbx9.AutoSize = true;
-            this.chkbx9.Location = new System.Drawing.Point(1060, 186);
+            this.chkbx9.Location = new System.Drawing.Point(1040, 177);
             this.chkbx9.Name = "chkbx9";
             this.chkbx9.Size = new System.Drawing.Size(60, 20);
             this.chkbx9.TabIndex = 11;
@@ -134,7 +135,7 @@
             // chkbx8
             // 
             this.chkbx8.AutoSize = true;
-            this.chkbx8.Location = new System.Drawing.Point(1060, 160);
+            this.chkbx8.Location = new System.Drawing.Point(1040, 151);
             this.chkbx8.Name = "chkbx8";
             this.chkbx8.Size = new System.Drawing.Size(67, 20);
             this.chkbx8.TabIndex = 10;
@@ -144,7 +145,7 @@
             // chkbx7
             // 
             this.chkbx7.AutoSize = true;
-            this.chkbx7.Location = new System.Drawing.Point(1060, 134);
+            this.chkbx7.Location = new System.Drawing.Point(1040, 125);
             this.chkbx7.Name = "chkbx7";
             this.chkbx7.Size = new System.Drawing.Size(67, 20);
             this.chkbx7.TabIndex = 9;
@@ -154,7 +155,7 @@
             // chkbx6
             // 
             this.chkbx6.AutoSize = true;
-            this.chkbx6.Location = new System.Drawing.Point(1060, 108);
+            this.chkbx6.Location = new System.Drawing.Point(1040, 99);
             this.chkbx6.Name = "chkbx6";
             this.chkbx6.Size = new System.Drawing.Size(65, 20);
             this.chkbx6.TabIndex = 8;
@@ -163,7 +164,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(904, 275);
+            this.button1.Location = new System.Drawing.Point(884, 266);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(210, 43);
             this.button1.TabIndex = 13;
@@ -171,12 +172,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(523, 383);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "label1";
+            // 
             // knapsackGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1273, 595);
+            this.ClientSize = new System.Drawing.Size(1273, 516);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.chkbx10);
             this.Controls.Add(this.chkbx9);
@@ -213,5 +224,6 @@
         private System.Windows.Forms.CheckBox chkbx7;
         private System.Windows.Forms.CheckBox chkbx6;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
