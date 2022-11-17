@@ -300,6 +300,9 @@ namespace pdsa_coursework
             return dialogResult;
         }
 
-      
+        private void lstviewItems_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
