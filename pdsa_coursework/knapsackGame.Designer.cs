@@ -48,7 +48,7 @@
             // 
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 516);
+            this.splitter1.Size = new System.Drawing.Size(3, 621);
             this.splitter1.TabIndex = 1;
             this.splitter1.TabStop = false;
             // 
@@ -56,7 +56,7 @@
             // 
             this.lstviewItems.GridLines = true;
             this.lstviewItems.HideSelection = false;
-            this.lstviewItems.Location = new System.Drawing.Point(69, 65);
+            this.lstviewItems.Location = new System.Drawing.Point(85, 93);
             this.lstviewItems.Name = "lstviewItems";
             this.lstviewItems.Size = new System.Drawing.Size(642, 244);
             this.lstviewItems.TabIndex = 2;
@@ -65,9 +65,10 @@
             // chkbx1
             // 
             this.chkbx1.AutoSize = true;
-            this.chkbx1.Location = new System.Drawing.Point(884, 99);
+            this.chkbx1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkbx1.Location = new System.Drawing.Point(209, 368);
             this.chkbx1.Name = "chkbx1";
-            this.chkbx1.Size = new System.Drawing.Size(66, 20);
+            this.chkbx1.Size = new System.Drawing.Size(71, 22);
             this.chkbx1.TabIndex = 3;
             this.chkbx1.Text = "Item A";
             this.chkbx1.UseVisualStyleBackColor = true;
@@ -75,9 +76,10 @@
             // chkbx2
             // 
             this.chkbx2.AutoSize = true;
-            this.chkbx2.Location = new System.Drawing.Point(884, 125);
+            this.chkbx2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkbx2.Location = new System.Drawing.Point(209, 394);
             this.chkbx2.Name = "chkbx2";
-            this.chkbx2.Size = new System.Drawing.Size(66, 20);
+            this.chkbx2.Size = new System.Drawing.Size(72, 22);
             this.chkbx2.TabIndex = 4;
             this.chkbx2.Text = "Item B";
             this.chkbx2.UseVisualStyleBackColor = true;
@@ -85,9 +87,10 @@
             // chkbx3
             // 
             this.chkbx3.AutoSize = true;
-            this.chkbx3.Location = new System.Drawing.Point(884, 151);
+            this.chkbx3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkbx3.Location = new System.Drawing.Point(209, 420);
             this.chkbx3.Name = "chkbx3";
-            this.chkbx3.Size = new System.Drawing.Size(66, 20);
+            this.chkbx3.Size = new System.Drawing.Size(73, 22);
             this.chkbx3.TabIndex = 5;
             this.chkbx3.Text = "Item C";
             this.chkbx3.UseVisualStyleBackColor = true;
@@ -95,9 +98,10 @@
             // chkbx4
             // 
             this.chkbx4.AutoSize = true;
-            this.chkbx4.Location = new System.Drawing.Point(884, 177);
+            this.chkbx4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkbx4.Location = new System.Drawing.Point(209, 446);
             this.chkbx4.Name = "chkbx4";
-            this.chkbx4.Size = new System.Drawing.Size(67, 20);
+            this.chkbx4.Size = new System.Drawing.Size(73, 22);
             this.chkbx4.TabIndex = 6;
             this.chkbx4.Text = "Item D";
             this.chkbx4.UseVisualStyleBackColor = true;
@@ -105,9 +109,10 @@
             // chkbx5
             // 
             this.chkbx5.AutoSize = true;
-            this.chkbx5.Location = new System.Drawing.Point(884, 203);
+            this.chkbx5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkbx5.Location = new System.Drawing.Point(209, 472);
             this.chkbx5.Name = "chkbx5";
-            this.chkbx5.Size = new System.Drawing.Size(66, 20);
+            this.chkbx5.Size = new System.Drawing.Size(72, 22);
             this.chkbx5.TabIndex = 7;
             this.chkbx5.Text = "Item E";
             this.chkbx5.UseVisualStyleBackColor = true;
@@ -115,9 +120,10 @@
             // chkbx10
             // 
             this.chkbx10.AutoSize = true;
-            this.chkbx10.Location = new System.Drawing.Point(1040, 203);
+            this.chkbx10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkbx10.Location = new System.Drawing.Point(462, 472);
             this.chkbx10.Name = "chkbx10";
-            this.chkbx10.Size = new System.Drawing.Size(64, 20);
+            this.chkbx10.Size = new System.Drawing.Size(70, 22);
             this.chkbx10.TabIndex = 12;
             this.chkbx10.Text = "Item J";
             this.chkbx10.UseVisualStyleBackColor = true;
@@ -125,9 +131,10 @@
             // chkbx9
             // 
             this.chkbx9.AutoSize = true;
-            this.chkbx9.Location = new System.Drawing.Point(1040, 177);
+            this.chkbx9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkbx9.Location = new System.Drawing.Point(462, 446);
             this.chkbx9.Name = "chkbx9";
-            this.chkbx9.Size = new System.Drawing.Size(60, 20);
+            this.chkbx9.Size = new System.Drawing.Size(65, 22);
             this.chkbx9.TabIndex = 11;
             this.chkbx9.Text = "Item I";
             this.chkbx9.UseVisualStyleBackColor = true;
@@ -135,9 +142,10 @@
             // chkbx8
             // 
             this.chkbx8.AutoSize = true;
-            this.chkbx8.Location = new System.Drawing.Point(1040, 151);
+            this.chkbx8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkbx8.Location = new System.Drawing.Point(462, 420);
             this.chkbx8.Name = "chkbx8";
-            this.chkbx8.Size = new System.Drawing.Size(67, 20);
+            this.chkbx8.Size = new System.Drawing.Size(73, 22);
             this.chkbx8.TabIndex = 10;
             this.chkbx8.Text = "Item H";
             this.chkbx8.UseVisualStyleBackColor = true;
@@ -145,9 +153,10 @@
             // chkbx7
             // 
             this.chkbx7.AutoSize = true;
-            this.chkbx7.Location = new System.Drawing.Point(1040, 125);
+            this.chkbx7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkbx7.Location = new System.Drawing.Point(462, 394);
             this.chkbx7.Name = "chkbx7";
-            this.chkbx7.Size = new System.Drawing.Size(67, 20);
+            this.chkbx7.Size = new System.Drawing.Size(74, 22);
             this.chkbx7.TabIndex = 9;
             this.chkbx7.Text = "Item G";
             this.chkbx7.UseVisualStyleBackColor = true;
@@ -155,16 +164,18 @@
             // chkbx6
             // 
             this.chkbx6.AutoSize = true;
-            this.chkbx6.Location = new System.Drawing.Point(1040, 99);
+            this.chkbx6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkbx6.Location = new System.Drawing.Point(462, 368);
             this.chkbx6.Name = "chkbx6";
-            this.chkbx6.Size = new System.Drawing.Size(65, 20);
+            this.chkbx6.Size = new System.Drawing.Size(71, 22);
             this.chkbx6.TabIndex = 8;
             this.chkbx6.Text = "Item F";
             this.chkbx6.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(884, 266);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(265, 517);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(210, 43);
             this.button1.TabIndex = 13;
@@ -175,18 +186,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(523, 383);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(43, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(712, 50);
             this.label1.TabIndex = 14;
-            this.label1.Text = "label1";
+            this.label1.Text = "Find a subset of these items which will give the maximum profit such that \r\ntheir" +
+    " cumulative weight is not more than 10 kg.\r\n";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // knapsackGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1273, 516);
+            this.ClientSize = new System.Drawing.Size(836, 621);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.chkbx10);
@@ -201,9 +215,10 @@
             this.Controls.Add(this.chkbx1);
             this.Controls.Add(this.lstviewItems);
             this.Controls.Add(this.splitter1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "knapsackGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "knapsackGame";
+            this.Text = "Knapsack Game";
             this.Load += new System.EventHandler(this.knapsackGame_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
