@@ -12,3 +12,16 @@ D:\Repositories\Visual studio\Pdsa_Coursework\pdsa_coursework\obj\Debug\pdsa_cou
 D:\Repositories\Visual studio\Pdsa_Coursework\pdsa_coursework\obj\Debug\pdsa_coursework.knapsackGame.resources
 D:\Repositories\Visual studio\Pdsa_Coursework\pdsa_coursework\obj\Debug\pdsa_coursework.minimumConnectorsGame.resources
 D:\Repositories\Visual studio\Pdsa_Coursework\pdsa_coursework\obj\Debug\pdsa_coursework.shortestPathGame.resources
+C:\Users\ASUS\OneDrive\Documents\GitHub\pdsa_coursework\pdsa_coursework\bin\Debug\pdsa_coursework.exe.config
+C:\Users\ASUS\OneDrive\Documents\GitHub\pdsa_coursework\pdsa_coursework\bin\Debug\pdsa_coursework.exe
+C:\Users\ASUS\OneDrive\Documents\GitHub\pdsa_coursework\pdsa_coursework\bin\Debug\pdsa_coursework.pdb
+C:\Users\ASUS\OneDrive\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.csproj.AssemblyReference.cache
+C:\Users\ASUS\OneDrive\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.knapsackGame.resources
+C:\Users\ASUS\OneDrive\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.Form1.resources
+C:\Users\ASUS\OneDrive\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.minimumConnectorsGame.resources
+C:\Users\ASUS\OneDrive\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.Properties.Resources.resources
+C:\Users\ASUS\OneDrive\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.shortestPathGame.resources
+C:\Users\ASUS\OneDrive\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.csproj.GenerateResource.cache
+C:\Users\ASUS\OneDrive\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.exe
+C:\Users\ASUS\OneDrive\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.pdb
