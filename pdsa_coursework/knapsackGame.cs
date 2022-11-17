@@ -86,7 +86,7 @@ namespace pdsa_coursework
                 lstviewItems.Items[i].SubItems.Add(weight[i].ToString());
                 lstviewItems.Items[i].SubItems.Add(profit[i].ToString());
             }
-            //////////////////////////////////////
+         
            
             //knapsack max weight assign
             int capacity = 10;
@@ -94,6 +94,8 @@ namespace pdsa_coursework
             int[,] matrix = new int[10 + 1,capacity+1];
 
 
+
+            ////knacksack algorithm
             for (int i = 0; i <= 10; i++)
             {
                 for (int j = 0; j <= capacity; j++)
@@ -120,7 +122,7 @@ namespace pdsa_coursework
             int a = 10;
             int b = capacity;
 
-        // int[] subsets = new int[10];
+     
 
             int x = 0;
             while (a > 0 && b > 0)
@@ -148,116 +150,153 @@ namespace pdsa_coursework
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int[] answers=new int[10];
-            String answers_toDb = "";
-            int x = 0;
+            try 
+            {
+                int[] answers = new int[10];
+                String answers_toDb = "";
+                int x = 0;
 
-            if (chkbx1.Checked) 
-            {
-                answers[x] = 1;
-                x++;
-                answers_toDb = answers_toDb + " " + 1;
-            }
-            if (chkbx2.Checked)
-            {
-                answers[x] = 2;
-                x++;
-                answers_toDb = answers_toDb + " " + 2;
-            }
-            if (chkbx3.Checked)
-            {
-                answers[x] = 3;
-                x++;
-                answers_toDb = answers_toDb + " " + 3;
-            }
-            if (chkbx4.Checked)
-            {
-                answers[x] = 4;
-                x++;
-                answers_toDb = answers_toDb + " " + 4;
-            }
-            if (chkbx5.Checked)
-            {
-                answers[x] = 5;
-                x++;
-                answers_toDb = answers_toDb + " " + 5;
-            }
-            if (chkbx6.Checked)
-            {
-                answers[x] = 6;
-                x++;
-                answers_toDb = answers_toDb + " " + 6;
-            }
-            if (chkbx7.Checked)
-            {
-                answers[x] = 7;
-                x++;
-                answers_toDb = answers_toDb + " " + 7;
-            }
-            if (chkbx8.Checked)
-            {
-                answers[x] = 8;
-                x++;
-                answers_toDb = answers_toDb + " " + 8;
-            }
-            if (chkbx9.Checked)
-            {
-                answers[x] = 9;
-                x++;
-                answers_toDb = answers_toDb + " " + 9;
-            }
-            if (chkbx10.Checked)
-            {
-                answers[x] = 10;
-                x++;
-                answers_toDb = answers_toDb + " " + 10;
-            }
-            
-
-
-         
-          
-
-
-            int matchedanswers = 0;
-            for (int y = 0; y < answers.Length; y++) 
-            {
-                for(int z=0;z<subsets.Length;z++) 
+                if (chkbx1.Checked)
                 {
-                    if (answers[y] == subsets[z] && (answers[y] != 0 && subsets[z] != 0)) 
+                    answers[x] = 1;
+                    x++;
+                    answers_toDb = answers_toDb + " " + 1;
+                }
+                if (chkbx2.Checked)
+                {
+                    answers[x] = 2;
+                    x++;
+                    answers_toDb = answers_toDb + " " + 2;
+                }
+                if (chkbx3.Checked)
+                {
+                    answers[x] = 3;
+                    x++;
+                    answers_toDb = answers_toDb + " " + 3;
+                }
+                if (chkbx4.Checked)
+                {
+                    answers[x] = 4;
+                    x++;
+                    answers_toDb = answers_toDb + " " + 4;
+                }
+                if (chkbx5.Checked)
+                {
+                    answers[x] = 5;
+                    x++;
+                    answers_toDb = answers_toDb + " " + 5;
+                }
+                if (chkbx6.Checked)
+                {
+                    answers[x] = 6;
+                    x++;
+                    answers_toDb = answers_toDb + " " + 6;
+                }
+                if (chkbx7.Checked)
+                {
+                    answers[x] = 7;
+                    x++;
+                    answers_toDb = answers_toDb + " " + 7;
+                }
+                if (chkbx8.Checked)
+                {
+                    answers[x] = 8;
+                    x++;
+                    answers_toDb = answers_toDb + " " + 8;
+                }
+                if (chkbx9.Checked)
+                {
+                    answers[x] = 9;
+                    x++;
+                    answers_toDb = answers_toDb + " " + 9;
+                }
+                if (chkbx10.Checked)
+                {
+                    answers[x] = 10;
+                    x++;
+                    answers_toDb = answers_toDb + " " + 10;
+                }
+
+
+
+
+
+
+
+                int matchedanswers = 0;
+                for (int y = 0; y < answers.Length; y++)
+                {
+                    for (int z = 0; z < subsets.Length; z++)
                     {
-                          matchedanswers++;
-                 
+                        if (answers[y] == subsets[z] && (answers[y] != 0 && subsets[z] != 0))
+                        {
+                            matchedanswers++;
+
+
+                        }
 
                     }
 
+
                 }
-            
-
-            }
-            con.Open();
-            if (matchedanswers == x)
-            {
-                // MessageBox.Show("wade goda bossa");
-
-                string name = "";
-
-                if (InputBox("Dialog Box", "What is your name?", ref name) == DialogResult.OK)
-                {
-                    SqlCommand cmd = new SqlCommand("insert into knapsack_winners values('" + DateTime.Now.ToString("yyyy-MM-dd") + "','" + name + "','" + answers_toDb + "')", con);
-
-                   int i= cmd.ExecuteNonQuery();
-                    cmd.Dispose();
-                }
-
-                
-            }
-            con.Close();
-
            
+                if (matchedanswers == x && matchedanswers != 0)
+                {
 
-            
-            
+
+                    string name = "";
+
+                    if (InputBox("Your answer is correct !", "What is your name?", ref name) == DialogResult.OK)
+                    {
+
+                        if (name == "")
+                        {
+                            MessageBox.Show("Name Cannot be empty", "Error");
+                        }
+                        else 
+                        {
+                            con.Open();
+                            SqlCommand cmd = new SqlCommand("insert into knapsack_winners values('" + DateTime.Now.ToString("yyyy-MM-dd") + "','" + name + "','" + answers_toDb + "')", con);
+
+                            int i = cmd.ExecuteNonQuery();
+                            cmd.Dispose();
+                            con.Close();
+
+                            if (i != 0)
+                            {
+                                MessageBox.Show("Your name is saved and game will be reloaded", "Success");
+
+
+                                this.Close();
+                                knapsackGame obj = new knapsackGame();
+                                obj.Show();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error", "Error");
+                            }
+
+                        }
+
+
+
+
+                       
+
+                    }
+
+
+                }
+             
+
+
+
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
  
@@ -279,12 +318,12 @@ namespace pdsa_coursework
             buttonCancel.DialogResult = DialogResult.Cancel;
 
             label.SetBounds(36, 36, 372, 13);
-            textBox.SetBounds(36, 86, 700, 20);
-            buttonOk.SetBounds(228, 160, 160, 60);
-            buttonCancel.SetBounds(400, 160, 160, 60);
+            textBox.SetBounds(36, 86, 400, 20);
+            buttonOk.SetBounds(80, 160, 160, 60);
+            buttonCancel.SetBounds(250, 160, 160, 60);
 
             label.AutoSize = true;
-            form.ClientSize = new Size(796, 307);
+            form.ClientSize = new Size(500, 307);
             form.FormBorderStyle = FormBorderStyle.FixedDialog;
             form.StartPosition = FormStartPosition.CenterScreen;
             form.MinimizeBox = false;
