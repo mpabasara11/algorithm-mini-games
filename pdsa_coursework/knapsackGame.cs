@@ -22,6 +22,7 @@ namespace pdsa_coursework
 
         //subset kept global since its need to be accessed  from all methods
         int[] subsets = new int[10];
+        int correctanswers = 0;
         public knapsackGame()
         {
             InitializeComponent();
@@ -124,7 +125,7 @@ namespace pdsa_coursework
 
      
 
-            int x = 0;
+           
             while (a > 0 && b > 0)
             {
               
@@ -132,7 +133,7 @@ namespace pdsa_coursework
                 {
                   
                     Console.WriteLine(a);
-                    subsets[x] = a; x = x + 1;
+                    subsets[correctanswers] = a; correctanswers = correctanswers + 1;
                    
                     b = b - weight[a - 1];
                  
@@ -154,66 +155,66 @@ namespace pdsa_coursework
             {
                 int[] answers = new int[10];
                 String answers_toDb = "";
-                int x = 0;
+                int tickedanswrs = 0;
 
                 if (chkbx1.Checked)
                 {
-                    answers[x] = 1;
-                    x++;
+                    answers[tickedanswrs] = 1;
+                    tickedanswrs++;
                     answers_toDb = answers_toDb + " " + 1;
                 }
                 if (chkbx2.Checked)
                 {
-                    answers[x] = 2;
-                    x++;
+                    answers[tickedanswrs] = 2;
+                    tickedanswrs++;
                     answers_toDb = answers_toDb + " " + 2;
                 }
                 if (chkbx3.Checked)
                 {
-                    answers[x] = 3;
-                    x++;
+                    answers[tickedanswrs] = 3;
+                    tickedanswrs++;
                     answers_toDb = answers_toDb + " " + 3;
                 }
                 if (chkbx4.Checked)
                 {
-                    answers[x] = 4;
-                    x++;
+                    answers[tickedanswrs] = 4;
+                    tickedanswrs++;
                     answers_toDb = answers_toDb + " " + 4;
                 }
                 if (chkbx5.Checked)
                 {
-                    answers[x] = 5;
-                    x++;
+                    answers[tickedanswrs] = 5;
+                    tickedanswrs++;
                     answers_toDb = answers_toDb + " " + 5;
                 }
                 if (chkbx6.Checked)
                 {
-                    answers[x] = 6;
-                    x++;
+                    answers[tickedanswrs] = 6;
+                    tickedanswrs++;
                     answers_toDb = answers_toDb + " " + 6;
                 }
                 if (chkbx7.Checked)
                 {
-                    answers[x] = 7;
-                    x++;
+                    answers[tickedanswrs] = 7;
+                    tickedanswrs++;
                     answers_toDb = answers_toDb + " " + 7;
                 }
                 if (chkbx8.Checked)
                 {
-                    answers[x] = 8;
-                    x++;
+                    answers[tickedanswrs] = 8;
+                    tickedanswrs++;
                     answers_toDb = answers_toDb + " " + 8;
                 }
                 if (chkbx9.Checked)
                 {
-                    answers[x] = 9;
-                    x++;
+                    answers[tickedanswrs] = 9;
+                    tickedanswrs++;
                     answers_toDb = answers_toDb + " " + 9;
                 }
                 if (chkbx10.Checked)
                 {
-                    answers[x] = 10;
-                    x++;
+                    answers[tickedanswrs] = 10;
+                    tickedanswrs++;
                     answers_toDb = answers_toDb + " " + 10;
                 }
 
@@ -239,8 +240,8 @@ namespace pdsa_coursework
 
 
                 }
-           
-                if (matchedanswers == x && matchedanswers != 0)
+
+                if (matchedanswers == correctanswers && matchedanswers != 0)
                 {
 
 
@@ -253,7 +254,7 @@ namespace pdsa_coursework
                         {
                             MessageBox.Show("Name Cannot be empty", "Error");
                         }
-                        else 
+                        else
                         {
                             con.Open();
                             SqlCommand cmd = new SqlCommand("insert into knapsack_winners values('" + DateTime.Now.ToString("yyyy-MM-dd") + "','" + name + "','" + answers_toDb + "')", con);
@@ -275,17 +276,12 @@ namespace pdsa_coursework
                             {
                                 MessageBox.Show("Error", "Error");
                             }
-
                         }
-
-
-
-
-                       
-
                     }
-
-
+                }
+                else 
+                {
+                    MessageBox.Show("Your answer is wrong", "Error");
                 }
              
 

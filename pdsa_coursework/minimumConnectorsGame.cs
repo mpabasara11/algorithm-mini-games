@@ -17,7 +17,7 @@ namespace pdsa_coursework
 
 
         private SqlCommand cmd;
-        SqlConnection con = new SqlConnection("Data Source=SHAYDE-AFTERMAT;Initial Catalog=pdsa2;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=15S-DU3039TX;Initial Catalog=pdsa2_cw;Integrated Security=True");
 
         public int save(string a)
         {

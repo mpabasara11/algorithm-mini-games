@@ -27,8 +27,8 @@ namespace pdsa_coursework
         private void button2_Click(object sender, EventArgs e)
         {
             // this.Hide();
-            shortestPathGame shortestPathGame = new shortestPathGame();
-            shortestPathGame.Show();
+
+            System.Diagnostics.Process.Start("https://codepen.io/TharushaCaldera/pen/LYrOqQr");
         }
 
         private void button3_Click(object sender, EventArgs e)

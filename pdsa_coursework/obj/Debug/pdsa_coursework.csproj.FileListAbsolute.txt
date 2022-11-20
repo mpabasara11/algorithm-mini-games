@@ -25,3 +25,16 @@ C:\Users\ASUS\OneDrive\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debu
 C:\Users\ASUS\OneDrive\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\OneDrive\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.exe
 C:\Users\ASUS\OneDrive\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.pdb
+D:\mpaba\Documents\GitHub\pdsa_coursework\pdsa_coursework\bin\Debug\pdsa_coursework.exe.config
+D:\mpaba\Documents\GitHub\pdsa_coursework\pdsa_coursework\bin\Debug\pdsa_coursework.exe
+D:\mpaba\Documents\GitHub\pdsa_coursework\pdsa_coursework\bin\Debug\pdsa_coursework.pdb
+D:\mpaba\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.csproj.AssemblyReference.cache
+D:\mpaba\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.csproj.SuggestedBindingRedirects.cache
+D:\mpaba\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.knapsackGame.resources
+D:\mpaba\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.Form1.resources
+D:\mpaba\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.minimumConnectorsGame.resources
+D:\mpaba\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.Properties.Resources.resources
+D:\mpaba\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.csproj.GenerateResource.cache
+D:\mpaba\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.csproj.CoreCompileInputs.cache
+D:\mpaba\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.exe
+D:\mpaba\Documents\GitHub\pdsa_coursework\pdsa_coursework\obj\Debug\pdsa_coursework.pdb
