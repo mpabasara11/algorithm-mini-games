@@ -92,6 +92,11 @@
             this.labelFH = new System.Windows.Forms.Label();
             this.panel28 = new System.Windows.Forms.Panel();
             this.panel31 = new System.Windows.Forms.Panel();
+            this.labelanswer = new System.Windows.Forms.Label();
+            this.Submit_answer = new System.Windows.Forms.Button();
+            this.label_answer_status = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button_save = new System.Windows.Forms.Button();
             this.gameBord.SuspendLayout();
             this.panel33.SuspendLayout();
             this.panel30.SuspendLayout();
@@ -120,30 +125,36 @@
             // 
             // buttonSubmit
             // 
-            this.buttonSubmit.Location = new System.Drawing.Point(706, 252);
+            this.buttonSubmit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSubmit.Location = new System.Drawing.Point(706, 509);
             this.buttonSubmit.Name = "buttonSubmit";
-            this.buttonSubmit.Size = new System.Drawing.Size(75, 23);
+            this.buttonSubmit.Size = new System.Drawing.Size(189, 29);
             this.buttonSubmit.TabIndex = 7;
-            this.buttonSubmit.Text = "Submit";
-            this.buttonSubmit.UseVisualStyleBackColor = true;
+            this.buttonSubmit.Text = "Check Correct Answer";
+            this.buttonSubmit.UseVisualStyleBackColor = false;
+            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // textBoxAnswer
             // 
-            this.textBoxAnswer.Location = new System.Drawing.Point(706, 188);
+            this.textBoxAnswer.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.textBoxAnswer.Location = new System.Drawing.Point(706, 212);
             this.textBoxAnswer.Name = "textBoxAnswer";
             this.textBoxAnswer.Size = new System.Drawing.Size(100, 22);
             this.textBoxAnswer.TabIndex = 6;
+            this.textBoxAnswer.TextChanged += new System.EventHandler(this.textBoxAnswer_TextChanged);
             // 
             // labelQuestion
             // 
             this.labelQuestion.AutoSize = true;
             this.labelQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuestion.Location = new System.Drawing.Point(701, 60);
+            this.labelQuestion.Location = new System.Drawing.Point(687, 60);
             this.labelQuestion.Name = "labelQuestion";
-            this.labelQuestion.Size = new System.Drawing.Size(333, 125);
+            this.labelQuestion.Size = new System.Drawing.Size(360, 150);
             this.labelQuestion.TabIndex = 5;
             this.labelQuestion.Text = "Q. \r\nIndentify the minimum connectors\r\nto all the cities and find the\r\nminimum di" +
-    "stance ?\r\n\r\n";
+    "stance ?\r\n(*Start from Red color indicated city)\r\n\r\n";
+            this.labelQuestion.Click += new System.EventHandler(this.labelQuestion_Click);
             // 
             // gameBord
             // 
@@ -726,11 +737,12 @@
             this.labelCE.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelCE.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCE.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelCE.Location = new System.Drawing.Point(26, 0);
+            this.labelCE.Location = new System.Drawing.Point(13, 0);
             this.labelCE.Name = "labelCE";
             this.labelCE.Size = new System.Drawing.Size(63, 17);
             this.labelCE.TabIndex = 7;
             this.labelCE.Text = "labelCE";
+            this.labelCE.Click += new System.EventHandler(this.labelCE_Click);
             // 
             // panel20
             // 
@@ -785,11 +797,76 @@
             this.panel31.Size = new System.Drawing.Size(19, 105);
             this.panel31.TabIndex = 28;
             // 
+            // labelanswer
+            // 
+            this.labelanswer.AutoSize = true;
+            this.labelanswer.BackColor = System.Drawing.SystemColors.Control;
+            this.labelanswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelanswer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelanswer.Location = new System.Drawing.Point(715, 566);
+            this.labelanswer.Name = "labelanswer";
+            this.labelanswer.Size = new System.Drawing.Size(60, 17);
+            this.labelanswer.TabIndex = 20;
+            this.labelanswer.Text = "Answer";
+            this.labelanswer.Click += new System.EventHandler(this.labelanswer_Click);
+            // 
+            // Submit_answer
+            // 
+            this.Submit_answer.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Submit_answer.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Submit_answer.Location = new System.Drawing.Point(703, 251);
+            this.Submit_answer.Name = "Submit_answer";
+            this.Submit_answer.Size = new System.Drawing.Size(189, 29);
+            this.Submit_answer.TabIndex = 21;
+            this.Submit_answer.Text = "Submit Answer";
+            this.Submit_answer.UseVisualStyleBackColor = false;
+            this.Submit_answer.Click += new System.EventHandler(this.Submit_answer_Click);
+            // 
+            // label_answer_status
+            // 
+            this.label_answer_status.AutoSize = true;
+            this.label_answer_status.BackColor = System.Drawing.SystemColors.Control;
+            this.label_answer_status.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_answer_status.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label_answer_status.Location = new System.Drawing.Point(712, 306);
+            this.label_answer_status.Name = "label_answer_status";
+            this.label_answer_status.Size = new System.Drawing.Size(113, 17);
+            this.label_answer_status.TabIndex = 22;
+            this.label_answer_status.Text = "Answer_status";
+            // 
+            // textBox1
+            // 
+            this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.textBox1.Location = new System.Drawing.Point(706, 365);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(127, 22);
+            this.textBox1.TabIndex = 23;
+            this.textBox1.Visible = false;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // button_save
+            // 
+            this.button_save.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_save.Location = new System.Drawing.Point(703, 407);
+            this.button_save.Name = "button_save";
+            this.button_save.Size = new System.Drawing.Size(103, 29);
+            this.button_save.TabIndex = 24;
+            this.button_save.Text = "Save";
+            this.button_save.UseVisualStyleBackColor = false;
+            this.button_save.Visible = false;
+            this.button_save.Click += new System.EventHandler(this.button_save_Click);
+            // 
             // minimumConnectorsGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1084, 749);
+            this.ClientSize = new System.Drawing.Size(1171, 749);
+            this.Controls.Add(this.button_save);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label_answer_status);
+            this.Controls.Add(this.Submit_answer);
+            this.Controls.Add(this.labelanswer);
             this.Controls.Add(this.buttonSubmit);
             this.Controls.Add(this.textBoxAnswer);
             this.Controls.Add(this.labelQuestion);
@@ -918,5 +995,10 @@
         private System.Windows.Forms.Label labelFH;
         private System.Windows.Forms.Panel panel28;
         private System.Windows.Forms.Panel panel31;
+        private System.Windows.Forms.Label labelanswer;
+        private System.Windows.Forms.Button Submit_answer;
+        private System.Windows.Forms.Label label_answer_status;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button_save;
     }
 }
